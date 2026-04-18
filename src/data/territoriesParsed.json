@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-18T07:43:53.364Z",
+  "generatedAt": "2026-04-18T12:03:31.080Z",
   "sourceSheet": "Sheet1",
   "sourceFile": "NigeriaEnergy.xlsx",
   "territories": [
@@ -897,6 +897,1126 @@
       "poGrid": "1Mwa",
       "poSolar": "9Kwa",
       "poOther": "7Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 13,
+      "territory": "Kano",
+      "territoryLabel": "Kano",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Kano state",
+      "population": 7976100,
+      "households": 500,
+      "kpi": 60,
+      "energySources": "Grid, Hydro, wind",
+      "status": "warning",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 14,
+      "territory": "Kaduna",
+      "territoryLabel": "Kaduna",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Kano state",
+      "population": 7976100,
+      "households": 500,
+      "kpi": 60,
+      "energySources": "Grid, Hydro, wind",
+      "status": "critical",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 15,
+      "territory": "Kaduna",
+      "territoryLabel": "Kaduna",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Kaduna state",
+      "population": 7976100,
+      "households": 500,
+      "kpi": 35,
+      "energySources": "Grid, Hydro, solar",
+      "status": "critical",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 15,
+      "territory": "Kaduna",
+      "territoryLabel": "Kaduna",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Kaduna state",
+      "population": 7976100,
+      "households": 500,
+      "kpi": 35,
+      "energySources": "Grid, Hydro, solar",
+      "status": "critical",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 16,
+      "territory": "Taraba",
+      "territoryLabel": "Taraba",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Taraba state",
+      "population": 7976100,
+      "households": 500,
+      "kpi": 35,
+      "energySources": "Grid, Hydro, solar",
+      "status": "critical",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 17,
+      "territory": "Bauchi",
+      "territoryLabel": "Bauchi",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Bauchi state",
+      "population": 7976100,
+      "households": 500,
+      "kpi": 35,
+      "energySources": "Grid, Hydro, solar",
+      "status": "critical",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 18,
+      "territory": "Bauchi",
+      "territoryLabel": "Bauchi",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Bauchi state",
+      "population": 7976100,
+      "households": 500,
+      "kpi": 35,
+      "energySources": "Grid, Hydro, solar",
+      "status": "critical",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 19,
+      "territory": "Bauchi",
+      "territoryLabel": "Bauchi",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Bauchi state",
+      "population": 7976100,
+      "households": 500,
+      "kpi": 35,
+      "energySources": "Grid, Hydro, solar",
+      "status": "critical",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 20,
+      "territory": "Kogi",
+      "territoryLabel": "Kogi",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Kogi  state",
+      "population": 7976100,
+      "households": 9000,
+      "kpi": 70,
+      "energySources": "Grid, Hydro, solar",
+      "status": "warning",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 21,
+      "territory": "Sokoto",
+      "territoryLabel": "Sokoto",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Sokoto  state",
+      "population": 7976100,
+      "households": 9000,
+      "kpi": 70,
+      "energySources": "Grid, Hydro, solar",
+      "status": "warning",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 22,
+      "territory": "Abia",
+      "territoryLabel": "Abia",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Abia state",
+      "population": 4976100,
+      "households": 6500,
+      "kpi": 65,
+      "energySources": "Grid, Hydro, solar",
+      "status": "warning",
+      "poGrid": "",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 23,
+      "territory": "Niger",
+      "territoryLabel": "Niger",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Niger state",
+      "population": 4976100,
+      "households": 6500,
+      "kpi": 88,
+      "energySources": "Grid, Hydro, solar",
+      "status": "stable",
+      "poGrid": "",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 24,
+      "territory": "Benue",
+      "territoryLabel": "Benue",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Benue state",
+      "population": 4976100,
+      "households": 6500,
+      "kpi": 40,
+      "energySources": "Grid, Hydro, solar",
+      "status": "critical",
+      "poGrid": "",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 25,
+      "territory": "Bayelsa",
+      "territoryLabel": "Bayelsa",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Bayelsa state",
+      "population": 4976100,
+      "households": 6500,
+      "kpi": 40,
+      "energySources": "Grid, Hydro, solar",
+      "status": "critical",
+      "poGrid": "",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
       "impactCarbon": "1,000 metric tons",
       "impactRatio": "0:1",
       "powerUsedDay1": 5,

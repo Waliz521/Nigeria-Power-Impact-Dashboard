@@ -1,4 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog'
+import { useEffect, useRef, useState } from 'react'
 import {
   Line,
   LineChart,
@@ -48,6 +49,14 @@ interface TerritoryModalProps {
 }
 
 export function TerritoryModal({ territory, open, onOpenChange }: TerritoryModalProps) {
+  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 })
+  const dragRef = useRef<{ px: number; py: number; ox: number; oy: number } | null>(null)
+  const dragHandleRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!open) setDragOffset({ x: 0, y: 0 })
+  }, [open])
+
   if (!territory) return null
 
   const sources = energySourceList(territory.energySources)
@@ -58,10 +67,49 @@ export function TerritoryModal({ territory, open, onOpenChange }: TerritoryModal
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 z-[2000] bg-black/45" />
-        <Dialog.Content className="fixed left-1/2 top-1/2 z-[2001] max-h-[min(90dvh,720px)] w-[min(calc(100vw-1rem),520px)] -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl bg-white p-4 shadow-xl sm:p-5">
-          <Dialog.Title className="pr-8 text-xl font-semibold text-gray-900">
-            {territory.territoryLabel}
-          </Dialog.Title>
+        <Dialog.Content
+          className="fixed left-1/2 top-1/2 z-[2001] max-h-[min(90dvh,720px)] w-[min(calc(100vw-1rem),520px)] overflow-y-auto rounded-2xl bg-white p-4 shadow-xl sm:p-5"
+          style={{
+            transform: `translate(calc(-50% + ${dragOffset.x}px), calc(-50% + ${dragOffset.y}px))`,
+          }}
+        >
+          <div
+            ref={dragHandleRef}
+            className="cursor-grab select-none active:cursor-grabbing"
+            onPointerDown={(e) => {
+              if (e.button !== 0) return
+              dragHandleRef.current?.setPointerCapture(e.pointerId)
+              dragRef.current = {
+                px: e.clientX,
+                py: e.clientY,
+                ox: dragOffset.x,
+                oy: dragOffset.y,
+              }
+            }}
+            onPointerMove={(e) => {
+              const d = dragRef.current
+              if (!d) return
+              setDragOffset({
+                x: d.ox + (e.clientX - d.px),
+                y: d.oy + (e.clientY - d.py),
+              })
+            }}
+            onPointerUp={(e) => {
+              dragRef.current = null
+              try {
+                dragHandleRef.current?.releasePointerCapture(e.pointerId)
+              } catch {
+                /* ignore */
+              }
+            }}
+            onPointerCancel={() => {
+              dragRef.current = null
+            }}
+          >
+            <Dialog.Title className="pr-8 text-xl font-semibold text-gray-900">
+              {territory.territoryLabel}
+            </Dialog.Title>
+          </div>
           <Dialog.Description className="sr-only">
             Power, demographics, and issues for this territory.
           </Dialog.Description>
@@ -73,9 +121,6 @@ export function TerritoryModal({ territory, open, onOpenChange }: TerritoryModal
             >
               {STATUS_LABELS[territory.status]}
             </span>
-            {territory.developerNotes ? (
-              <span className="text-xs text-gray-500">{territory.developerNotes}</span>
-            ) : null}
           </div>
 
           <div className="mt-4 space-y-4 text-sm">
@@ -90,6 +135,21 @@ export function TerritoryModal({ territory, open, onOpenChange }: TerritoryModal
               ) : (
                 <p className="text-gray-500">—</p>
               )}
+            </section>
+
+            <section className="grid grid-cols-2 gap-3">
+              <div>
+                <h3 className="font-medium text-gray-800">Population</h3>
+                <p className="mt-1 text-gray-700">
+                  {territory.population ? territory.population.toLocaleString() : '—'}
+                </p>
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-800">Households</h3>
+                <p className="mt-1 text-gray-700">
+                  {territory.households ? territory.households.toLocaleString() : '—'}
+                </p>
+              </div>
             </section>
 
             <section>
@@ -110,21 +170,6 @@ export function TerritoryModal({ territory, open, onOpenChange }: TerritoryModal
                     backgroundColor: statusColor,
                   }}
                 />
-              </div>
-            </section>
-
-            <section className="grid grid-cols-2 gap-3">
-              <div>
-                <h3 className="font-medium text-gray-800">Population</h3>
-                <p className="mt-1 text-gray-700">
-                  {territory.population ? territory.population.toLocaleString() : '—'}
-                </p>
-              </div>
-              <div>
-                <h3 className="font-medium text-gray-800">Households</h3>
-                <p className="mt-1 text-gray-700">
-                  {territory.households ? territory.households.toLocaleString() : '—'}
-                </p>
               </div>
             </section>
 

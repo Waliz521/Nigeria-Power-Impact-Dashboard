@@ -12,7 +12,7 @@ export interface TerritoryFilterOption {
 
 interface DataContextValue {
   territories: TerritoryRecord[]
-  bySn: Map<number, TerritoryRecord>
+  byId: Map<string, TerritoryRecord>
   /** Polygon / state-level rows for the Territory filter */
   stateTerritoryFilterOptions: TerritoryFilterOption[]
   /** Point / city & sub-state rows for the Cities filter */
@@ -25,25 +25,29 @@ const DataContext = createContext<DataContextValue | null>(null)
 export function DataProvider({ children }: { children: ReactNode }) {
   const value = useMemo<DataContextValue>(() => {
     const { territories, generatedAt, sourceFile } = payload
-    const bySn = new Map<number, TerritoryRecord>()
+    const byId = new Map<string, TerritoryRecord>()
     const stateTerritoryFilterOptions: TerritoryFilterOption[] = []
     const cityTerritoryFilterOptions: TerritoryFilterOption[] = []
 
     for (const t of territories) {
-      bySn.set(t.sn, t)
-      const rule = TERRITORY_GEOMETRY[t.sn]
+      byId.set(t.id, t)
+      const rule = TERRITORY_GEOMETRY[t.id]
       if (!rule) continue
-      const opt: TerritoryFilterOption = { id: String(t.sn), label: t.territoryLabel }
+      const opt: TerritoryFilterOption = { id: t.id, label: t.territoryLabel }
       if (rule.kind === 'polygon') stateTerritoryFilterOptions.push(opt)
       else cityTerritoryFilterOptions.push(opt)
     }
 
-    stateTerritoryFilterOptions.sort((a, b) => Number(a.id) - Number(b.id))
-    cityTerritoryFilterOptions.sort((a, b) => Number(a.id) - Number(b.id))
+    function sortKey(id: string) {
+      const [base, dup] = id.split('_')
+      return Number(base) * 1000 + (dup ? Number(dup) : 0)
+    }
+    stateTerritoryFilterOptions.sort((a, b) => sortKey(a.id) - sortKey(b.id))
+    cityTerritoryFilterOptions.sort((a, b) => sortKey(a.id) - sortKey(b.id))
 
     return {
       territories,
-      bySn,
+      byId,
       stateTerritoryFilterOptions,
       cityTerritoryFilterOptions,
       meta: { generatedAt, sourceFile },

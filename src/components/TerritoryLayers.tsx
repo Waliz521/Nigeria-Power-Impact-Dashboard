@@ -76,7 +76,7 @@ function FitMapBounds({
 }
 
 interface MarkerSpec {
-  sn: number
+  territoryId: string
   status: PowerStatus
   position: [number, number]
   label: string
@@ -95,7 +95,7 @@ export function TerritoryLayers({
   showMarkers: boolean
 }) {
   const { filters } = useMapContext()
-  const { territories, bySn } = useTerritoryData()
+  const { territories, byId } = useTerritoryData()
   const [statesGeo, setStatesGeo] = useState<FeatureCollection | null>(null)
   const [loadError, setLoadError] = useState<string | null>(null)
 
@@ -121,22 +121,22 @@ export function TerritoryLayers({
   const visibleTerritories = useMemo(() => {
     const { territoryId, cityTerritoryId, status } = filters
     return territories.filter((t) => {
-      const rule = TERRITORY_GEOMETRY[t.sn]
+      const rule = TERRITORY_GEOMETRY[t.id]
       if (!rule) return false
       if (status && t.status !== status) return false
 
       if (territoryId && cityTerritoryId) {
-        const matchState = rule.kind === 'polygon' && String(t.sn) === territoryId
-        const matchCity = rule.kind === 'point' && String(t.sn) === cityTerritoryId
+        const matchState = rule.kind === 'polygon' && t.id === territoryId
+        const matchCity = rule.kind === 'point' && t.id === cityTerritoryId
         return matchState || matchCity
       }
       if (territoryId) {
         if (rule.kind !== 'polygon') return false
-        return String(t.sn) === territoryId
+        return t.id === territoryId
       }
       if (cityTerritoryId) {
         if (rule.kind !== 'point') return false
-        return String(t.sn) === cityTerritoryId
+        return t.id === cityTerritoryId
       }
       return true
     })
@@ -145,7 +145,7 @@ export function TerritoryLayers({
   const allowedStateNames = useMemo(() => {
     const s = new Set<string>()
     for (const t of visibleTerritories) {
-      const rule = TERRITORY_GEOMETRY[t.sn]
+      const rule = TERRITORY_GEOMETRY[t.id]
       if (rule) for (const n of rule.states) s.add(n)
     }
     return s
@@ -168,7 +168,7 @@ export function TerritoryLayers({
     if (!stateByName) return { polygonFc: null, markers: markerList }
 
     for (const t of visibleTerritories) {
-      const rule = TERRITORY_GEOMETRY[t.sn]
+      const rule = TERRITORY_GEOMETRY[t.id]
       if (!rule) continue
       const stateFeatures = rule.states
         .map((nm) => stateByName.get(nm))
@@ -179,7 +179,7 @@ export function TerritoryLayers({
         if (merged) {
           polygons.push({
             type: 'Feature',
-            properties: { sn: t.sn, status: t.status },
+            properties: { territoryId: t.id, status: t.status },
             geometry: merged.geometry,
           })
         }
@@ -190,7 +190,7 @@ export function TerritoryLayers({
         const [lng, lat] = c.geometry.coordinates
         const [dLat = 0, dLng = 0] = rule.offset ?? []
         markerList.push({
-          sn: t.sn,
+          territoryId: t.id,
           status: t.status,
           position: [lat + dLat, lng + dLng],
           label: t.territoryLabel,
@@ -266,8 +266,8 @@ export function TerritoryLayers({
           pane={POLYGON_PANE}
           style={styleFor}
           onEachFeature={(feature, layer) => {
-            const sn = feature.properties?.sn as number | undefined
-            const rec = sn != null ? bySn.get(sn) : undefined
+            const tid = feature.properties?.territoryId as string | undefined
+            const rec = tid != null ? byId.get(tid) : undefined
             if (rec) {
               layer.bindTooltip(rec.territoryLabel, {
                 sticky: true,
@@ -291,12 +291,12 @@ export function TerritoryLayers({
       ) : null}
       {showMarkers &&
         markers.map((m) => {
-          const rec = bySn.get(m.sn)
+          const rec = byId.get(m.territoryId)
           if (!rec) return null
           const fill = statusStyleColor(m.status)
           return (
             <CircleMarker
-              key={`${layerKey}-${m.sn}`}
+              key={`${layerKey}-${m.territoryId}`}
               center={m.position}
               radius={12}
               pane={CITY_MARKER_PANE}

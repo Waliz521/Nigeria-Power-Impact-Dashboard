@@ -11,6 +11,8 @@ export interface CustomDataEntry {
 }
 
 export interface TerritoryRecord {
+  /** Unique key for filters/map (duplicate Excel s/n → "15_2", "15_3", …) */
+  id: string
   sn: number
   territory: string
   territoryLabel: string

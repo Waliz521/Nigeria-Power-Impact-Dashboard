@@ -14,7 +14,7 @@ const DEFAULT_XLSX = path.join(
   root,
   '..',
   'Nigeria Power impact Map Dashboard responsive webpage',
-  'NigeriaEnergy.xlsx',
+  'NigeriaEnergyNew.xlsx',
 )
 
 const xlsxPath = process.argv[2] ? path.resolve(process.argv[2]) : DEFAULT_XLSX
@@ -100,8 +100,13 @@ const sheetName = wb.SheetNames[0]
 const sheet = wb.Sheets[sheetName]
 const rows = XLSX.utils.sheet_to_json(sheet, { defval: '' })
 
+/** Stable id for filters/map; duplicate Excel s/n → "15", "15_2", "15_3", … */
+const snOccurrence = new Map()
 const territories = rows.map((row) => {
   const sn = num(row['s/n'], 0)
+  const occ = (snOccurrence.get(sn) ?? 0) + 1
+  snOccurrence.set(sn, occ)
+  const id = occ === 1 ? String(sn) : `${sn}_${occ}`
   const territory = String(row['Territory'] ?? '').trim()
   const territoryLabel =
     territory || (sn ? `Territory ${sn}` : 'Unknown territory')
@@ -111,6 +116,7 @@ const territories = rows.map((row) => {
   )
 
   return {
+    id,
     sn,
     territory,
     territoryLabel,

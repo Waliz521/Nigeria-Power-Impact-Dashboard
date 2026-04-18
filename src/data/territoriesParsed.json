@@ -1,0 +1,967 @@
+{
+  "generatedAt": "2026-04-18T07:43:53.364Z",
+  "sourceSheet": "Sheet1",
+  "sourceFile": "NigeriaEnergy.xlsx",
+  "territories": [
+    {
+      "sn": 1,
+      "territory": "OsunOndo",
+      "territoryLabel": "OsunOndo",
+      "developerNotes": "This groups 2 or more states.",
+      "areas": "Osun state and Ondo state.",
+      "population": 10894378,
+      "households": 200,
+      "kpi": 70,
+      "energySources": "Grid, Hydro, solar",
+      "status": "warning",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 2,
+      "territory": "BornoYobe",
+      "territoryLabel": "BornoYobe",
+      "developerNotes": "This groups 2 or more states.",
+      "areas": "Borno state, yobe state",
+      "population": 10248136,
+      "households": 330,
+      "kpi": 90,
+      "energySources": "Grid, Hydro, wind",
+      "status": "stable",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 3,
+      "territory": "Oyo state",
+      "territoryLabel": "Oyo state",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Oyo state",
+      "population": 7976100,
+      "households": 500,
+      "kpi": 100,
+      "energySources": "Grid, Hydro, wind",
+      "status": "stable",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 4,
+      "territory": "Lagos state",
+      "territoryLabel": "Lagos state",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Lagos state",
+      "population": 17804000,
+      "households": 1000,
+      "kpi": 40,
+      "energySources": "Grid, Hydro, wind",
+      "status": "critical",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 5,
+      "territory": "SouthSouth",
+      "territoryLabel": "SouthSouth",
+      "developerNotes": "This groups 2 or more states.",
+      "areas": "Rivers state and Bayelsa state",
+      "population": 12435870,
+      "households": 770,
+      "kpi": 88,
+      "energySources": "Grid, Hydro, wind",
+      "status": "stable",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 6,
+      "territory": "FCT",
+      "territoryLabel": "FCT",
+      "developerNotes": "this contains 1 single state",
+      "areas": "Abuja FCT",
+      "population": 4392360,
+      "households": 660,
+      "kpi": 97,
+      "energySources": "Grid, Hydro, wind",
+      "status": "stable",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 7,
+      "territory": "Ibadan",
+      "territoryLabel": "Ibadan",
+      "developerNotes": "this contains a single major city within  Oyo state",
+      "areas": "Ibadan",
+      "population": 4292360,
+      "households": 520,
+      "kpi": 99,
+      "energySources": "Grid, Hydro, wind",
+      "status": "stable",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 8,
+      "territory": "Ogun main cities",
+      "territoryLabel": "Ogun main cities",
+      "developerNotes": "( Multi city) this contains multiple cities or towns within a state.",
+      "areas": "Abeokuta,   \r\n Ijebu Ode",
+      "population": 2292360,
+      "households": 290,
+      "kpi": 98,
+      "energySources": "Solar, wind",
+      "status": "stable",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 9,
+      "territory": "Ibadan main LGAs",
+      "territoryLabel": "Ibadan main LGAs",
+      "developerNotes": "(Multi LGA) this contains multiple LGAs within a city or town.",
+      "areas": "1. Ibadan North\r\n2. Ibadan South-West",
+      "population": 1292360,
+      "households": 55,
+      "kpi": 96,
+      "energySources": "Solar, wind",
+      "status": "stable",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 10,
+      "territory": "Lagelu",
+      "territoryLabel": "Lagelu",
+      "developerNotes": "This contains a single LGA.",
+      "areas": "Lagelu in ibadan, oyo state",
+      "population": 147957,
+      "households": 22,
+      "kpi": 91,
+      "energySources": "wind, hydro",
+      "status": "stable",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 11,
+      "territory": "",
+      "territoryLabel": "Territory 11",
+      "developerNotes": "This contains multiple areas within an LGA.",
+      "areas": "1.Ajara\r\n2. Kajola\r\n3.Lagun",
+      "population": 230000,
+      "households": 11,
+      "kpi": 65,
+      "energySources": "wind, solar",
+      "status": "warning",
+      "poGrid": "5Mwa",
+      "poSolar": "10Kwa",
+      "poOther": "10Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    },
+    {
+      "sn": 12,
+      "territory": "Lalupon",
+      "territoryLabel": "Lalupon",
+      "developerNotes": "1 single Area within  Lagelu LGA.",
+      "areas": "Lalupon",
+      "population": 56000,
+      "households": 8,
+      "kpi": 55,
+      "energySources": "grid,solar",
+      "status": "critical",
+      "poGrid": "1Mwa",
+      "poSolar": "9Kwa",
+      "poOther": "7Kwa",
+      "impactCarbon": "1,000 metric tons",
+      "impactRatio": "0:1",
+      "powerUsedDay1": 5,
+      "powerUsedDay2": 10,
+      "powerUsedDay3": 20,
+      "powerUsedDay4": 30,
+      "powerUsedDay5": 40,
+      "powerUsedDay6": 50,
+      "powerUsedDay7": 80,
+      "issues": [
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "transformer overload"
+        },
+        {
+          "datetime": "Jan10, 10:25AM",
+          "description": "leakage detected"
+        },
+        {
+          "datetime": "Jan10, 11:20AM",
+          "description": "Fuse spark"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "Sabotage suspected"
+        },
+        {
+          "datetime": "Jan30, 10:20AM",
+          "description": "Extreme wet weather"
+        },
+        {
+          "datetime": "Jan10, 10:20AM",
+          "description": "Grid cut off"
+        },
+        {
+          "datetime": "Jan12, 10:20AM",
+          "description": "unexpected  power surge"
+        }
+      ],
+      "customData": [
+        {
+          "key": "Custom1",
+          "value": "data1"
+        },
+        {
+          "key": "Custom2",
+          "value": "data2"
+        },
+        {
+          "key": "Custom3",
+          "value": "ABC"
+        },
+        {
+          "key": "Manager",
+          "value": "Mr.James Clever"
+        },
+        {
+          "key": "Service contact",
+          "value": "0786012345678"
+        },
+        {
+          "key": "Last inspected",
+          "value": "Jan12, 2026 10PM"
+        }
+      ]
+    }
+  ]
+}

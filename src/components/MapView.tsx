@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { MapContainer, TileLayer, useMap } from 'react-leaflet'
 import { TerritoryLayers } from './TerritoryLayers'
+import { WorldExcludeMaskLayer } from './WorldExcludeMaskLayer'
 import type { TerritoryRecord } from '../types'
 
 const NIGERIA_CENTER: [number, number] = [9.2, 8.2]
@@ -35,10 +36,12 @@ export function MapView({
   onTerritorySelect,
   showPolygons,
   showMarkers,
+  showWorldExcludeMask,
 }: {
   onTerritorySelect: (t: TerritoryRecord) => void
   showPolygons: boolean
   showMarkers: boolean
+  showWorldExcludeMask: boolean
 }) {
   return (
     <MapContainer
@@ -53,6 +56,7 @@ export function MapView({
         url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         subdomains="abcd"
       />
+      <WorldExcludeMaskLayer visible={showWorldExcludeMask} />
       <ZoomBottomLeft />
       <MapSizeSync />
       <TerritoryLayers

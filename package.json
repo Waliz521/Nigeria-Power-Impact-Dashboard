@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "data:import": "node scripts/import-excel.mjs",
+    "mask:simplify": "node scripts/simplify-mask-geojson.mjs",
     "build": "tsc -b && vite build",
     "build:all": "npm run data:import && npm run build",
     "lint": "eslint .",

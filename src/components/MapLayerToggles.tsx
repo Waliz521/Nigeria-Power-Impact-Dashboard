@@ -1,15 +1,19 @@
 export interface MapLayerTogglesProps {
   showPolygons: boolean
   showMarkers: boolean
+  showWorldExcludeMask: boolean
   onPolygonsChange: (v: boolean) => void
   onMarkersChange: (v: boolean) => void
+  onWorldExcludeMaskChange: (v: boolean) => void
 }
 
 export function MapLayerToggles({
   showPolygons,
   showMarkers,
+  showWorldExcludeMask,
   onPolygonsChange,
   onMarkersChange,
+  onWorldExcludeMaskChange,
 }: MapLayerTogglesProps) {
   return (
     <section
@@ -39,6 +43,15 @@ export function MapLayerToggles({
           onChange={(e) => onMarkersChange(e.target.checked)}
         />
         Substate points
+      </label>
+      <label className="flex cursor-pointer items-center gap-2 py-0.5 text-gray-800">
+        <input
+          type="checkbox"
+          className="h-4 w-4 shrink-0 rounded border-gray-300 text-emerald-700 focus:ring-emerald-600"
+          checked={showWorldExcludeMask}
+          onChange={(e) => onWorldExcludeMaskChange(e.target.checked)}
+        />
+        Dim outside Nigeria
       </label>
     </section>
   )

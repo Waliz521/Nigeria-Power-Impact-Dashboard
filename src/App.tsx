@@ -19,6 +19,7 @@ function AppShell() {
   const [modalOpen, setModalOpen] = useState(false)
   const [showPolygons, setShowPolygons] = useState(true)
   const [showMarkers, setShowMarkers] = useState(true)
+  const [showWorldExcludeMask, setShowWorldExcludeMask] = useState(true)
   const [filters, setFilters] = useState<MapFilters>(DEFAULT_MAP_FILTERS)
 
   return (
@@ -29,6 +30,7 @@ function AppShell() {
         <MapView
           showPolygons={showPolygons}
           showMarkers={showMarkers}
+          showWorldExcludeMask={showWorldExcludeMask}
           onTerritorySelect={(t) => {
             setSelected(t)
             setModalOpen(true)
@@ -39,8 +41,10 @@ function AppShell() {
             <MapLayerToggles
               showPolygons={showPolygons}
               showMarkers={showMarkers}
+              showWorldExcludeMask={showWorldExcludeMask}
               onPolygonsChange={setShowPolygons}
               onMarkersChange={setShowMarkers}
+              onWorldExcludeMaskChange={setShowWorldExcludeMask}
             />
           </div>
         </div>
